@@ -6,5 +6,14 @@ class Identity < ApplicationRecord
 
   validates :date_of_birth, presence: true
 
-  validates :ssn, uniqueness: true
+  validates :ssn, uniqueness: true, format: { with: /\d{9}/, message: "must be nine digits" }
+
+  normalize_attributes :first_name,
+    :middle_name,
+    :last_name,
+    :date_of_birth
+
+  normalize_attribute :ssn do |value|
+    value.gsub(/[^\d]/, '')
+  end
 end
