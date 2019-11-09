@@ -50,3 +50,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'simple_form'
 
 gem 'factory_bot'
+
+gem 'attribute_normalizer'
