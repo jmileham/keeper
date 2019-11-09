@@ -8,6 +8,9 @@ class Identity < ApplicationRecord
 
   validates :ssn, uniqueness: true, format: { with: /\d{9}/, message: "must be nine digits" }
 
+  has_many :fi_identity_ownerships
+  has_many :financial_institutions, through: :fi_identity_ownerships
+
   normalize_attributes :first_name,
     :middle_name,
     :last_name,
