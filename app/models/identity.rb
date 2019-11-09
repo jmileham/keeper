@@ -1,4 +1,4 @@
-class Identity
+class Identity < ApplicationRecord
   validates :first_name,
     :middle_name,
     :last_name,
