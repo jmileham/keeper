@@ -1,5 +1,5 @@
-class IdentitiesController < ApiController
+class Api::V1::IdentitiesController < ApiController
   def index
-    @identities = fi.identities
+    @identities = current_fi.identities
   end
 end

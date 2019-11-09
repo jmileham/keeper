@@ -8,11 +8,11 @@
 #
 
 FinancialInstitution.create!(
-  name: "Credible Securities",
+  name: "credible_securities",
   access_token: "Qgmrpy9e0XTn9uY_uhNN5sfddie0CDoe72rN2BqO3Y4"
 )
 
 FinancialInstitution.create!(
-  name: "Permanent Bank",
+  name: "permanent_bank",
   access_token: "QELQQDW2r17DqrhcwljBBTKQhIfuFNje-UM_kcdbqbg"
 )
