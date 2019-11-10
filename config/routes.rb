@@ -6,4 +6,6 @@ Rails.application.routes.draw do
       resources :identities, only: [:create, :index, :show]
     end
   end
+
+  resource :device_registration, only: [:new]
 end

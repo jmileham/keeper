@@ -52,3 +52,7 @@ gem 'simple_form'
 gem 'factory_bot'
 
 gem 'attribute_normalizer'
+
+gem "twitter-bootstrap-rails"
+
+gem "jquery-rails"

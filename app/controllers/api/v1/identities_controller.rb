@@ -14,6 +14,10 @@ class Api::V1::IdentitiesController < ApiController
     end
   end
 
+  def show
+    @identity = Identity.find(params[:id])
+  end
+
   private
 
   def ssn
