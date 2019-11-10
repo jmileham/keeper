@@ -15,7 +15,7 @@ class Api::V1::IdentitiesController < ApiController
   end
 
   def show
-    @identity = Identity.find(params[:id])
+    @identity = current_fi.identities.find(params[:id])
   end
 
   private
