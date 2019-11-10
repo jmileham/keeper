@@ -6,7 +6,7 @@ class Identity < ApplicationRecord
 
   validates :date_of_birth, presence: true
 
-  validates :ssn, uniqueness: true, format: { with: /\d{9}/, message: "must be nine digits" }
+  validates :ssn, format: { with: /\d{9}/, message: "must be nine digits" }
 
   has_many :fi_identity_ownerships
   has_many :financial_institutions, through: :fi_identity_ownerships

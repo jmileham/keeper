@@ -3,6 +3,7 @@ require 'active_support/security_utils'
 class ApiController < ApplicationController
   before_action :return_json
   before_action :authenticate
+  skip_before_action :verify_authenticity_token
 
   def authenticate
     authenticate_or_request_with_http_basic do |username, password|
